@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="myFirstApp">
+  <head>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <meta charset="utf-8">
+    <title>Hello</title>
+  </head>
+  <body>
+    <h1> My first AngularJs App</h1>
+    <div ng-controller="MyFirstController">
+        <input type="text" ng-model="name">
+        {{name}}
+    </div>
+
+
+    <div ng-controller="NameCalculator">
+      <h1>Name Calculator</h1>
+      <div>
+        <div>
+          Your name:
+          <input type="text" ng-model="name" ng-keyup="calnum();">
+        </div>
+        <div>
+          Total numeric value is {{totalval}}
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
